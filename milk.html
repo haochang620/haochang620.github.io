@@ -22,17 +22,17 @@
         $(function () {
             //Cold Water Temperatur
             var target_cwt = document.getElementById("CT");
-            for (let i = 100; i >= 0; i--) {
+            for (let i = 0; i <= 100; i++) {
                 let opt = document.createElement("option");
-                if (i == 80) opt.selected = true;
+                if (i == 25) opt.selected = true;
                 opt.innerHTML = i;
                 target_cwt.appendChild(opt);
             }
             //Hot Water Temperature
             var target_hwt = document.getElementById("HT");
-            for (let i = 0; i <= 100; i++) {
+            for (let i = 100; i >= 0; i--) {
                 let opt = document.createElement("option");
-                if (i == 25) opt.selected = true;
+                if (i == 80) opt.selected = true;
                 opt.innerHTML = i;
                 target_hwt.appendChild(opt);
             }
